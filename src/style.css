@@ -1,0 +1,119 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.popupOuter * {
+  font-family: 'Poppins', sans-serif;
+}
+.popupOuter {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    color: #38454d;
+    padding: 20px;
+    background: #b2defb;
+}
+.popupPage.popupOuter:after {
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/684/684857.png);
+    background-size: cover;
+    bottom: -52px;
+    right: -65px;
+    transform: rotate(330deg);
+    z-index: 0;
+    opacity: 0.1;
+}
+.formOuter .formTitle {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+}
+.formOuter .subTitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.fieldOuter {
+    border-bottom: 1px solid #000;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 999;
+}
+.fieldOuter label {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+.fieldOuter label, .fieldOuter input, .fieldOuter select {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+}
+.fieldOuter input:focus, .fieldOuter select:focus {
+  outline: 0;
+}
+.noBorder {
+  border: none;
+}
+.fieldOuter input[type="date"], .fieldOuter select {
+    cursor: pointer;
+}
+.fieldOuter button {
+    background: #38362f;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 99;
+    position: relative;
+    margin-top: 10px;
+}
+.fieldOuter button:hover {
+  background: #1a1916;
+}
+.popupFooter, .popupFooter a {
+  color: #000;
+  position: relative;
+  z-index: 99;
+  text-align: center;
+  font-size: 12px;
+}
+.successMsg {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  border-radius: 6px;
+  padding: 7px 12px;
+  position: absolute;
+  z-index: 9999;
+  background: #35c535;
+  width: 90%;
+  box-sizing: border-box;
+  top: 120px;
+  color: #fff;
+  left: 0;
+  font-size: 14px;
+  right: 0;
+  text-align: center;
+  display: none;
+  margin: auto;
+  text-transform: capitalize;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "plasmo",
+  "displayName": "Browser auto fill",
+  "version": "0.0.1",
+  "description": "Auto fill forms using Plasmo framework",
+  "author": "simon",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@plasmohq/messaging": "^0.3.1",
+    "@plasmohq/storage": "^1.6.0",
+    "bcrypt": "^5.1.1",
+    "parcel": "^2.10.1",
+    "plasmo": "0.72.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "3.6.4",
+    "@types/chrome": "0.0.236",
+    "@types/node": "20.2.3",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "prettier": "2.8.8",
+    "typescript": "5.0.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ]
+  },
+  "main": "index.js",
+  "license": "ISC",
+  "keywords": []
+}
