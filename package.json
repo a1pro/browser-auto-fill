@@ -1,5 +1,5 @@
 {
-  "name": "plasmo",
+  "name": "browser-auto-fill",
   "displayName": "Browser auto fill",
   "version": "0.0.1",
   "description": "Auto fill forms using Plasmo framework",
@@ -12,9 +12,7 @@
   "dependencies": {
     "@plasmohq/messaging": "^0.3.1",
     "@plasmohq/storage": "^1.6.0",
-    "bcrypt": "^5.1.1",
-    "parcel": "^2.10.1",
-    "plasmo": "0.72.2",
+    "plasmo": "^0.72.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -32,11 +30,7 @@
       "https://*/*"
     ],
     "permissions": [
-      "tabs",
-      "activeTab"
+      "tabs"
     ]
-  },
-  "main": "index.js",
-  "license": "ISC",
-  "keywords": []
+  }
 }

@@ -25,9 +25,8 @@ function IndexPopup() {
         name: "get-user-data",
         body: {},
       });
-      if (userData.success){
+      if (userData.success)
         setFormData(userData.data);
-      }
     }
     fetchSavedData()
   }, [])
